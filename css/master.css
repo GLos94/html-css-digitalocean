@@ -20,20 +20,42 @@
 
 .fixed-menu{
   background-color: white;
+  padding: 1% 10%;
+}
+
+
+.login{
+  text-align: right;
 }
 
 .main-nav li{
   display: inline-block;
+  margin-right: 3%;
 }
 
 #logo{
-  max-width: 50%
+  max-width: 50%;
+  height: auto
 }
 
 /* sezione jumbotron */
 .jumbotron{
   background-color: #0069ff;
-  background-image: image("img/bg-home-cta.svg");
+  padding: 1% 0;
+  margin: 0 5%
+}
+
+.sfondo{
+  background-color: #0069ff;
+}
+
+.jumbotron h1, .jumbotron p{
+  color: white
+}
+
+.deploy{
+  background-color: white;
+  text-align: center;
 }
 
 /* sezione brand */
