@@ -5,6 +5,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+h3{
+  text-align: center;
+}
+
 /* regole debug */
 [class*="col-"] {
   height: 100%;
@@ -33,16 +37,29 @@
   margin-right: 3%;
 }
 
+/* dropdown */
+@media screen and (max-width: 991px){
+  .login {
+    display: none;
+  }
+  .main-nav:hover .login {
+    display: block;
+  }
+
+}
+
 #logo{
   max-width: 50%;
-  height: auto
+  height: auto;
 }
 
 /* sezione jumbotron */
 .jumbotron{
   background-color: #0069ff;
   padding: 1% 0;
-  margin: 0 5%
+  margin: 0 5%;
+  background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
+  background-size: cover;
 }
 
 .sfondo{
@@ -51,6 +68,28 @@
 
 .jumbotron h1, .jumbotron p{
   color: white
+}
+.jumbotron p{
+  font-size: 1.8rem
+}
+.jumbotron h1{
+  line-height: 57px;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.jumbotron input{
+  padding: 1% 0;
+  padding-right: 60%;
+}
+
+.jumbotron h4{
+  color: blue;
+  font-size: 2.5rem
+}
+
+.google{
+  padding: 5% 0
 }
 
 .deploy{
@@ -62,4 +101,46 @@
 
 .brand{
   background-color: #f3f5f9;
+  padding: 3% 0;
+}
+
+.brand img{
+  padding-right: 1%
+}
+
+.brand span, .brand a{
+  font-weight: bold
+}
+
+/* sezione deployments */
+
+.deployments{
+  padding: 2% 0
+}
+
+.deployments li{
+  list-style-type: none;
+}
+
+/* sezione carousel */
+
+.carousel{
+  background-color: #f3f5f9;
+  padding: 2% 0
+}
+
+.carousel img{
+  max-width: 50%;
+  height: auto;
+  padding-bottom: 2%;
+}
+
+.carousel p{
+  padding: 2% 0;
+  margin-top: 2%;
+}
+
+.carousel i{
+  font-size: 4rem;
+  padding: 0 2%
 }

@@ -23,12 +23,12 @@
       <section class="fixed-menu">
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-lg-4">
             <img id="logo" src="img/logo.png" alt="logo">
           </div>
-          <div class="col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-lg-4">
             <nav class="main-nav">
-              <ul>
+              <ul class="login">
                 <li><a href="#">Products</a></li>
                 <i class="fas fa-angle-down"></i>
                 <li><a href="#">Customers</a></li>
@@ -38,7 +38,7 @@
               </ul>
             </nav>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-lg-4">
             <nav class="main-nav">
               <ul class="login">
                 <li><a href="#">Docs</a></li>
@@ -59,23 +59,24 @@
       <section class="jumbotron">
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-lg-6">
             <h1>The simplest cloud <br> platform for <br> developers & teams</h1>
-            <p>Deploy,manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousan.</p>
+            <p>Deploy,manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-lg-6">
             <div class="row deploy">
               <div class="col-lg-12">
-                <h3>Deploy your app in seconds.</h3>
-                <h3>Get started now.</h3>
+                <h3><strong>Deploy your app in seconds.</strong></h3>
+                <h4><strong>Get started now.</strong></h4>
                 <form action="/action_page.php">
                   <label for="email"></label><br>
                   <input type="text" id="email" name="Email" value="Email"><br>
                   <label for="password"></label><br>
                   <input type="text" id="pass" name="Password" value="Password"><br><br>
                   <input type="submit" value="Create your account"><br>
-                  <i class="fab fa-google"></i><input type="submit" value="Sign up with Google"> <br>
-                  <span>By signing up you agree to the <a href="#">Terms of Service</a></span>
+                  <i class="fab fa-google"></i>
+                  <input type="submit" value="Sign up with Google"><br>
+                  <span class="google">By signing up you agree to the <a href="#">Terms of Service</a></span>
                 </form>
               </div>
             </div>
@@ -91,7 +92,7 @@
       <section class="brand text-center">
         <div class="row">
           <span>INNOVATIVE BUSINESS TRUST DIGITALOCEAN</span>
-          <div class="col-lg-12">
+          <div class="col-xs-12 col-sm-12 col-lg-12">
             <img src="img/docker.svg" alt="docker">
             <img src="img/gitlab.svg" alt="gitlab">
             <img src="img/slack.svg" alt="slack">
@@ -103,6 +104,62 @@
         <a href="#">View customer stories</a>
         <i class="fas fa-angle-down"></i>
       </section>
+
+<!-- sezione deployments -->
+      <section class="deployments">
+        <h3><strong>Deploy and scale seamlessly</strong></h3>
+        <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-6">
+            <ul>
+              <li><a href="#">Deploy</a></li>
+              <li><a href="#">Manage</a></li>
+              <li><a href="#">Secure</a></li>
+              <li><a href="#">Scale</a></li>
+              <li><a href="#">Monitor</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-lg-6">
+                <img src="img/ico1.svg" alt="">
+                <h6>Kubernetes in minutes</h6>
+                <p>Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-6">
+                <img src="img/ico2.svg" alt="ico2">
+                <h6>Flexible compute types</h6>
+                <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-lg-6">
+                <img src="img/ico3.svg" alt="ico3">
+                <h6>1-Click App Marketplace</h6>
+                <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-6">
+                <img src="img/ico4.svg" alt="ico4">
+                <h6>Global availability</h6>
+                <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- sezione carousel -->
+    <section class="carousel text-center">
+      <h3><strong>Designed for developers</strong></h3>
+      <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-12">
+          <i class="fas fa-angle-left"></i><img src="img/carousel-img.jpg" alt="carousel"><i class="fas fa-angle-right"></i>
+        </div>
+        <p>Create compute servers in 55 seconds or less</p>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </section>
     </div>
     </main>
 <!-- footer -->
