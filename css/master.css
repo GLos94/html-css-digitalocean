@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* regole debug */
+[class*="col-"] {
+  height: 100%;
+  /* background-color: pink; */
+  /* border: 1px solid blue */
+}
+
+/* .row{
+  height: 100px
+} */
+
+/* regole sezione fixed menu */
+
+.fixed-menu{
+  background-color: white;
+}
+
+.main-nav li{
+  display: inline-block;
+}
+
+#logo{
+  max-width: 50%
+}
+
+/* sezione jumbotron */
+.jumbotron{
+  background-color: #0069ff;
+  background-image: image("img/bg-home-cta.svg");
+}
+
+/* sezione brand */
+
+.brand{
+  background-color: #f3f5f9;
+}
