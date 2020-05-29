@@ -11,7 +11,7 @@ h3{
 
 i{
   font-size: 10px;
-  margin-left: 1%
+  margin-left: 1%;
 }
 
 /* regole debug */
@@ -47,11 +47,11 @@ i{
 }
 
 .navbar-default .navbar-header{
-  margin: 0 6.5%;
+  margin: 0 3.5%;
 }
 
 .navbar-right{
-  margin-right: 6%;
+  margin-right: 3.5%;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -100,11 +100,12 @@ i{
 }
 
 .jumbotron h1, .jumbotron p{
-  color: white
+  color: white;
+  margin-left: 3%;
 }
 
 .jumbotron p{
-  font-size: 1.8rem
+  font-size: 1.8rem;
 }
 
 .jumbotron h1{
@@ -120,7 +121,7 @@ i{
 
 .jumbotron h4{
   color: blue;
-  font-size: 2.5rem
+  font-size: 2.5rem;
 }
 
 .deploy{
@@ -128,7 +129,8 @@ i{
   text-align: center;
   margin-top: 6%;
   margin-right: 20%;
-  border-radius: 5px
+  border-radius: 5px;
+  margin-left: 10%;
 }
 
 /* sezione brand */
@@ -139,7 +141,7 @@ i{
 }
 
 .brand img{
-  padding-right: 2.5%
+  padding-right: 2.5%;
 }
 
 .brand span, .brand a{
@@ -211,7 +213,7 @@ i{
 /* sezione features */
 
 .features{
-  padding: 2% 4%;
+  padding: 2% 2%;
 }
 
 .features h6{
@@ -233,7 +235,7 @@ i{
 }
 
 .allinea{
-  margin-left: 6%
+  margin-left: 4%
 }
 
 .tabella h3{
@@ -289,7 +291,7 @@ tr:not(:last-child){
 
 .servizi{
   background-color: hsl(221, 93%, 16%);
-  padding: 2% 6%;
+  padding: 2% 2%;
 }
 
 .icone-social i{
@@ -331,8 +333,50 @@ tr:not(:last-child){
 /* regole responsiveness */
 
 
+/* schermo sm */
+@media screen and (max-width: 970px) {
+
+
+
+.navbar-nav, .navbar-right{
+  display: none
+}
+
+.navbar-toggle{
+  display: block;
+  float: right;
+}
+
+  .deploy{
+    background-color: white;
+    text-align: center;
+    margin-top: 20%;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding: 7% 0;
+  }
+
+  .jumbotron h1{
+    line-height: 40px;
+    padding-top: 11%
+  }
+
+  .brand img{
+    padding-right: 0.5%;
+    max-width: 15%;
+  }
+  table{
+    width: 95%;
+  }
+
+  .tabella1{
+    margin-left: 0;
+  }
+}
+
 /* schermo xs */
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 768px) {
+
   .deploy{
     background-color: white;
     text-align: center;
@@ -346,10 +390,9 @@ tr:not(:last-child){
     padding-top: 11%;
   }
 
-
   table{
-    width: 75%;
-    margin-bottom: 3%
+    width: 90%;
+    margin: 2% 0;
   }
 
   table a{
@@ -359,24 +402,6 @@ tr:not(:last-child){
   }
 
   .tabella1{
-    margin-left: none
-  }
-
-}
-
-/* schermo sm */
-@media screen and (max-width: 768px) {
-  .deploy{
-    background-color: white;
-    text-align: center;
-    margin-top: 20%;
-    margin-right: 2%;
-    border-radius: 5px;
-    padding: 7% 0;
-  }
-
-  .jumbotron h1, .jumbotron p{
-    line-height: 30px;
-    padding-top: 11%
+    margin-left: 0;
   }
 }
