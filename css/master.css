@@ -22,31 +22,32 @@ h3{
 
 /* regole sezione fixed menu */
 
-.fixed-menu{
-  background-color: white;
-  padding: 1% 10%;
+
+/* NAVBAR */
+#logo-nav{
+    height: 100%;
+    width: auto;
+}
+
+#button-nav{
+    color: #006AFF;
+    border: 1px solid #006AFF;
+    border-radius: 10px;
+}
+
+.navbar-default{
+    background-image: none;
+    background-color: white;
+    border: none;
+    border:none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
 }
 
 
-.login{
-  text-align: right;
-}
-
-.main-nav li{
-  display: inline-block;
-  margin-right: 3%;
-}
-
-/* dropdown */
-@media screen and (max-width: 991px){
-  .login {
-    display: none;
-  }
-  .main-nav:hover .login {
-    display: block;
-  }
-
-}
 
 #logo{
   max-width: 50%;
@@ -60,6 +61,7 @@ h3{
   margin: 0 5%;
   background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
   background-size: cover;
+  margin-top: 6%
 }
 
 .sfondo{
@@ -143,4 +145,16 @@ h3{
 .carousel i{
   font-size: 4rem;
   padding: 0 2%
+}
+
+/* sezione tabella */
+
+.tabella{
+  background-color: blue
+}
+
+/* sezione get starded */
+
+.get-started{
+  background-color: blue
 }

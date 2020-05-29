@@ -13,43 +13,95 @@
   <body>
 <!-- header -->
 
-
-
-
     <header>
 <!-- barra fixed -->
     <div class="container-fluid">
 
       <section class="fixed-menu">
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-lg-4">
-            <img id="logo" src="img/logo.png" alt="logo">
-          </div>
-          <div class="col-xs-12 col-sm-12 col-lg-4">
-            <nav class="main-nav">
-              <ul class="login">
-                <li><a href="#">Products</a></li>
-                <i class="fas fa-angle-down"></i>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Community</a></li>
-                <i class="fas fa-angle-down"></i>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-lg-4">
-            <nav class="main-nav">
-              <ul class="login">
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Support</a></li>
-                <i class="fas fa-angle-down"></i>
-                <li><a href="#">Login</a></li>
-                <li><button type="button" name="button">Sign Up</button></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+        <!-- Navbar -->
+           <nav class="navbar navbar-default navbar-fixed-top">
+               <div class="container">
+                 <!-- Brand and toggle get grouped for better mobile display -->
+
+                 <!-- Hamburger menu-->
+                 <div class="navbar-header">
+
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                   </button>
+
+                   <a class="navbar-brand" href="#"> <img src="img/logo.png" id="logo-nav"> </a>
+                 </div>
+
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                   <ul class="nav navbar-nav">
+
+                       <li class="dropdown">
+
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                             <li><a href="#">Action</a></li>
+                             <li><a href="#">Another action</a></li>
+                             <li><a href="#">Something else here</a></li>
+                             <li role="separator" class="divider"></li>
+                             <li><a href="#">Separated link</a></li>
+                             <li role="separator" class="divider"></li>
+                             <li><a href="#">One more separated link</a></li>
+                           </ul>
+
+                       </li>
+
+
+                      <li><a href="#">Customers</a></li>
+
+                      <li class="dropdown">
+
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                           <li><a href="#">Action</a></li>
+                           <li><a href="#">Another action</a></li>
+                           <li><a href="#">Something else here</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">Separated link</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">One more separated link</a></li>
+                           </ul>
+
+                       </li>
+
+                       <li><a href="#">Pricing</a></li>
+
+                   </ul>
+
+                   <ul class="nav navbar-nav navbar-right">
+
+                     <li><a href="#">Docs</a></li>
+
+                     <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">Action</a></li>
+                         <li><a href="#">Another action</a></li>
+                         <li><a href="#">Something else here</a></li>
+                         <li role="separator" class="divider"></li>
+                         <li><a href="#">Separated link</a></li>
+                       </ul>
+                     </li>
+
+                     <li><a href="#">Login</a></li>
+
+                     <li><a href="#" id="button-nav">Sign Up</a></li>
+
+                   </ul>
+                 </div><!-- /.navbar-collapse -->
+               </div><!-- /.container-fluid -->
+           </nav>
+
 
       </section>
 
@@ -68,16 +120,20 @@
               <div class="col-lg-12">
                 <h3><strong>Deploy your app in seconds.</strong></h3>
                 <h4><strong>Get started now.</strong></h4>
-                <form action="/action_page.php">
-                  <label for="email"></label><br>
-                  <input type="text" id="email" name="Email" value="Email"><br>
-                  <label for="password"></label><br>
-                  <input type="text" id="pass" name="Password" value="Password"><br><br>
-                  <input type="submit" value="Create your account"><br>
-                  <i class="fab fa-google"></i>
-                  <input type="submit" value="Sign up with Google"><br>
-                  <span class="google">By signing up you agree to the <a href="#">Terms of Service</a></span>
-                </form>
+                <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                <div class="">
+                  <button>
+                      Create your account
+                  </button>
+                </div>
+                  <button>
+                      <i class="fab fa-google"></i> Sign up with Google
+                  </button>
+                  <p>By signing up you agree to the <a href="#"> Terms of Service</a>.</p>
+
+
+
               </div>
             </div>
           </div>
@@ -157,14 +213,270 @@
           <i class="fas fa-angle-left"></i><img src="img/carousel-img.jpg" alt="carousel"><i class="fas fa-angle-right"></i>
         </div>
         <p>Create compute servers in 55 seconds or less</p>
-        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </section>
+
+<!-- sezione features -->
+    <section>
+      <h3><strong>The features your business needs</strong></h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/ico5.svg" alt="ico5">
+          <h6>Reliable platform</h6>
+          <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+          <a href="#">Security</a>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/ico6.svg" alt="ico6">
+          <h6>Predictable pricing</h6>
+          <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+          <a href="#">Pricing</a>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/ico7.svg" alt="ico7">
+          <h6>World-class service</h6>
+          <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </section>
+
+
+<!-- sezione tabella -->
+    <section class="tabella">
+      <h3><strong>Service your customers around the world from 12 regions</strong></h3>
+      <div class="row">
+<!-- tabella 1 -->
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="codice">
+                AMS2
+              </div>
+              <div class="codice">
+                AMS3
+              </div>
+              <div class="codice">
+                BLR1
+              </div>
+              <div class="codice">
+                FRA1
+              </div>
+              <div class="codice">
+                LON1
+              </div>
+              <div class="codice">
+                NYC1
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="city">
+                Amsterdam, Netherlands
+              </div>
+              <div class="city">
+                Amsterdam, Netherlands
+              </div>
+              <div class="city">
+                Bangalore, India
+              </div>
+              <div class="city">
+                Frankfurt, German
+              </div>
+              <div class="city">
+                London, UK
+              </div>
+              <div class="city">
+                New York, USA
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+              <div class="test">
+                <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+<!-- tabella 2 -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="codice">
+                  AMS2
+                </div>
+                <div class="codice">
+                  AMS3
+                </div>
+                <div class="codice">
+                  BLR1
+                </div>
+                <div class="codice">
+                  FRA1
+                </div>
+                <div class="codice">
+                  LON1
+                </div>
+                <div class="codice">
+                  NYC1
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="city">
+                  Amsterdam, Netherlands
+                </div>
+                <div class="city">
+                  Amsterdam, Netherlands
+                </div>
+                <div class="city">
+                  Bangalore, India
+                </div>
+                <div class="city">
+                  Frankfurt, German
+                </div>
+                <div class="city">
+                  London, UK
+                </div>
+                <div class="city">
+                  New York, USA
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+                <div class="test">
+                  <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+<!-- sezione carousel 2 -->
+    <section class="carousel text-center">
+      <h3><strong>Development teams love DigitalOcean</strong></h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-12">
+          <i class="fas fa-angle-left"></i><img src="img/carousel-img.jpg" alt="carousel"><i class="fas fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section class="get-started text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-12">
+          <h3><strong>Get Started now.</strong></h3>
+          <button type="button" name="button">Create your account</button>
+        </div>
       </div>
     </section>
     </div>
     </main>
 <!-- footer -->
     <footer>
-
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="img/logo-mark.svg" alt="logo-mark">
+            <article class="copyright">
+            @2018 DigitalOcean, LCC. All rights reserved. <br>
+            Proudly made in NY
+            </article>
+            <div class="social">
+              <img src="img/twitter.svg" alt="twitter">
+              <img src="img/facebook.svg" alt="facebook">
+              <img src="img/instagram.svg" alt="instagram">
+              <img src="img/youtube.svg" alt="youtube">
+              <img src="img/linkedin.svg" alt="linkedin">
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h6>Company</h6>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Partner Network</a></li>
+              <li><a href="#">Referral Program</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Legal & Security</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6>Products</h6>
+            <ul>
+              <li><a href="#">Droplets</a></li>
+              <li><a href="#">Spaces</a></li>
+              <li><a href="#">Kubernetes</a></li>
+              <li><a href="#">Load Balancers</a></li>
+              <li><a href="#">Block Storage</a></li>
+              <li><a href="#">Tool & Integrations</a></li>
+              <li><a href="#">One-Click Apps</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6>Community</h6>
+            <ul>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Meetups</a></li>
+              <li><a href="#">Q&A</a></li>
+              <li><a href="#">Write for Donations></li>
+              <li><a href="#">Droplets for Demos</a></li>
+              <li><a href="#">Hatch</a></li>
+              <li><a href="#">Shop Swag</a></li>
+              <li><a href="#">Research Program</a></li>
+              <li><a href="#">Current Research</a></li>
+              <li><a href="#">Open Source</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#">Contact support</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Network Status</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
 
