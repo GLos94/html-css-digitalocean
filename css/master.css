@@ -9,6 +9,11 @@ h3{
   text-align: center;
 }
 
+i{
+  font-size: 10px;
+  margin-left: 1%
+}
+
 /* regole debug */
 [class*="col-"] {
   height: 100%;
@@ -32,8 +37,11 @@ h3{
 #button-nav{
     color: #006AFF;
     border: 1px solid #006AFF;
-    border-radius: 10px;
+    border-radius: 5px;
+    line-height: 0;
+    margin-top: 11%;
 }
+
 
 .navbar-default{
     background-image: none;
@@ -43,37 +51,65 @@ h3{
     box-shadow: none;
 }
 
+.navbar-default .navbar-header{
+  margin: 0 6.5%;
+}
+
+.navbar-right{
+  margin-right: 6%;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #000;
 }
 
-
-
 #logo{
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
 }
 
 /* sezione jumbotron */
 .jumbotron{
   background-color: #0069ff;
-  padding: 1% 0;
-  margin: 0 5%;
+  margin: 0 auto;
   background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
   background-size: cover;
-  margin-top: 6%
+  background-position: center;
+  margin-top: 2%;
 }
 
-.sfondo{
-  background-color: #0069ff;
+.account{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    color: white;
+    background-color: #006AFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.google{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 0;
+}
+
+#sign{
+  color: grey;
+  font-size: 1.2rem;
 }
 
 .jumbotron h1, .jumbotron p{
   color: white
 }
+
 .jumbotron p{
   font-size: 1.8rem
 }
+
 .jumbotron h1{
   line-height: 57px;
   font-size: 3.5em;
@@ -90,13 +126,12 @@ h3{
   font-size: 2.5rem
 }
 
-.google{
-  padding: 5% 0
-}
-
 .deploy{
   background-color: white;
   text-align: center;
+  margin-top: 6%;
+  margin-right: 20%;
+  border-radius: 5px
 }
 
 /* sezione brand */
@@ -107,7 +142,7 @@ h3{
 }
 
 .brand img{
-  padding-right: 1%
+  padding-right: 2.5%
 }
 
 .brand span, .brand a{
@@ -120,9 +155,36 @@ h3{
   padding: 2% 0
 }
 
+.deployments ul{
+  border-left: 1px solid blue;
+  padding-left: 3%;
+}
+
 .deployments li{
   list-style-type: none;
+  font-size: 15px;
+  padding: 5px 0;
+  color: #6f7b97;
 }
+
+.deployments p{
+  font-size: 1.3rem
+}
+
+.deployments h6{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#process{
+  text-align: center;
+  margin-bottom: 2%
+}
+
+.space{
+  margin-right: 25%
+}
+
 
 /* sezione carousel */
 
@@ -144,17 +206,67 @@ h3{
 
 .carousel i{
   font-size: 4rem;
-  padding: 0 2%
+  padding: 0 2%;
+  color: grey;
+}
+
+
+/* sezione features */
+
+.features{
+  padding: 2% 4%;
+}
+
+.features h6{
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 2%
+}
+
+.features h3{
+  padding-bottom: 2%;
 }
 
 /* sezione tabella */
 
 .tabella{
-  background-color: blue
+  background-color: #0b0b88;
+  color: white;
+  padding: 2% 0;
+}
+
+.allinea{
+  margin-left: 6%
+}
+
+.tabella h3{
+  padding-bottom: 2%;
+}
+
+.codice{
+  border-bottom: 1px solid white;
+  weight: 80%
 }
 
 /* sezione get starded */
 
 .get-started{
-  background-color: blue
+  background-color: #0b0b88;
+  color: white;
+  padding: 3% 0;
+}
+
+.button-start{
+    color: #006AFF;
+    border: 1px solid #006AFF;
+    padding: 1% 2%;
+    border-radius: 5px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+/* footer */
+
+.servizi{
+  background-color: hsl(221, 93%, 16%)
 }

@@ -16,9 +16,7 @@
     <header>
 <!-- barra fixed -->
     <div class="container-fluid">
-
       <section class="fixed-menu">
-
         <!-- Navbar -->
            <nav class="navbar navbar-default navbar-fixed-top">
                <div class="container">
@@ -26,23 +24,19 @@
 
                  <!-- Hamburger menu-->
                  <div class="navbar-header">
-
                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                    </button>
-
                    <a class="navbar-brand" href="#"> <img src="img/logo.png" id="logo-nav"> </a>
                  </div>
 
                  <!-- Collect the nav links, forms, and other content for toggling -->
                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                    <ul class="nav navbar-nav">
-
                        <li class="dropdown">
-
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
                            <ul class="dropdown-menu">
                              <li><a href="#">Action</a></li>
@@ -53,14 +47,9 @@
                              <li role="separator" class="divider"></li>
                              <li><a href="#">One more separated link</a></li>
                            </ul>
-
                        </li>
-
-
                       <li><a href="#">Customers</a></li>
-
                       <li class="dropdown">
-
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
                            <ul class="dropdown-menu">
                            <li><a href="#">Action</a></li>
@@ -71,17 +60,13 @@
                            <li role="separator" class="divider"></li>
                            <li><a href="#">One more separated link</a></li>
                            </ul>
-
                        </li>
-
                        <li><a href="#">Pricing</a></li>
-
                    </ul>
 
+
                    <ul class="nav navbar-nav navbar-right">
-
                      <li><a href="#">Docs</a></li>
-
                      <li class="dropdown">
                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
                        <ul class="dropdown-menu">
@@ -92,30 +77,25 @@
                          <li><a href="#">Separated link</a></li>
                        </ul>
                      </li>
-
                      <li><a href="#">Login</a></li>
-
                      <li><a href="#" id="button-nav">Sign Up</a></li>
-
                    </ul>
                  </div><!-- /.navbar-collapse -->
                </div><!-- /.container-fluid -->
            </nav>
-
-
       </section>
-
     </div>
-<!-- sezione jumbotron -->
-    <div class="container-fluid sfondo">
-      <section class="jumbotron">
 
+
+<!-- sezione jumbotron -->
+    <div class="container-fluid">
+      <section class="jumbotron">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
             <h1>The simplest cloud <br> platform for <br> developers & teams</h1>
             <p>Deploy,manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
           </div>
-          <div class="col-xs-12 col-sm-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
             <div class="row deploy">
               <div class="col-lg-12">
                 <h3><strong>Deploy your app in seconds.</strong></h3>
@@ -123,17 +103,14 @@
                 <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
                 <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
                 <div class="">
-                  <button>
+                  <button class="account">
                       Create your account
                   </button>
                 </div>
-                  <button>
+                  <button class="google">
                       <i class="fab fa-google"></i> Sign up with Google
                   </button>
-                  <p>By signing up you agree to the <a href="#"> Terms of Service</a>.</p>
-
-
-
+                  <p id="sign">By signing up you agree to the <a href="#"> Terms of Service</a>.</p>
               </div>
             </div>
           </div>
@@ -141,8 +118,10 @@
       </section>
     </div>
     </header>
+
 <!-- main -->
     <main>
+
 <!-- sezione brand -->
     <div class="container-fluid">
       <section class="brand text-center">
@@ -157,16 +136,15 @@
             <img src="img/splunk.svg" alt="splunk">
           </div>
         </div>
-        <a href="#">View customer stories</a>
-        <i class="fas fa-angle-down"></i>
+        <a href="#">View customer stories<i class="fas fa-greater-than"></i></a>
       </section>
 
 <!-- sezione deployments -->
       <section class="deployments">
         <h3><strong>Deploy and scale seamlessly</strong></h3>
-        <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+        <p id="process">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & <br> machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-lg-6">
+          <div class="col-xs-12 col-sm-4 col-lg-4 col-lg-offset-2">
             <ul>
               <li><a href="#">Deploy</a></li>
               <li><a href="#">Manage</a></li>
@@ -176,7 +154,7 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4 col-lg-6">
-            <div class="row">
+            <div class="row space">
               <div class="col-xs-12 col-sm-6 col-lg-6">
                 <img src="img/ico1.svg" alt="">
                 <h6>Kubernetes in minutes</h6>
@@ -188,7 +166,7 @@
                 <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
               </div>
             </div>
-            <div class="row">
+            <div class="row space">
               <div class="col-xs-12 col-sm-6 col-lg-6">
                 <img src="img/ico3.svg" alt="ico3">
                 <h6>1-Click App Marketplace</h6>
@@ -217,26 +195,26 @@
     </section>
 
 <!-- sezione features -->
-    <section>
+    <section class="features">
       <h3><strong>The features your business needs</strong></h3>
       <div class="row">
-        <div class="col-lg-4">
-          <img src="img/ico5.svg" alt="ico5">
-          <h6>Reliable platform</h6>
-          <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-          <a href="#">Security</a>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-lg-offset-1">
           <img src="img/ico6.svg" alt="ico6">
           <h6>Predictable pricing</h6>
           <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
-          <a href="#">Pricing</a>
+          <a href="#">Pricing<i class="fas fa-greater-than"></i></a>
         </div>
         <div class="col-lg-4">
           <img src="img/ico7.svg" alt="ico7">
           <h6>World-class service</h6>
           <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
-          <a href="#">Support</a>
+          <a href="#">Support<i class="fas fa-greater-than"></i></a>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/ico5.svg" alt="ico5">
+          <h6>Reliable platform</h6>
+          <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+          <a href="#">Security<i class="fas fa-greater-than"></i></a>
         </div>
       </div>
     </section>
@@ -245,11 +223,11 @@
 <!-- sezione tabella -->
     <section class="tabella">
       <h3><strong>Service your customers around the world from 12 regions</strong></h3>
-      <div class="row">
+      <div class="row allinea">
 <!-- tabella 1 -->
         <div class="col-lg-6">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-2">
               <div class="codice">
                 AMS2
               </div>
@@ -289,7 +267,7 @@
                 New York, USA
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-lg-offset-2">
               <div class="test">
                 <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
               </div>
@@ -314,7 +292,7 @@
 <!-- tabella 2 -->
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-2">
                 <div class="codice">
                   AMS2
                 </div>
@@ -354,7 +332,7 @@
                   New York, USA
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-lg-offset-2">
                 <div class="test">
                   <a href="#">Test speed<i class="fas fa-greater-than"></i></a>
                 </div>
@@ -397,7 +375,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-lg-12">
           <h3><strong>Get Started now.</strong></h3>
-          <button type="button" name="button">Create your account</button>
+          <button class="button-start" type="button" name="button">Create your account</button>
         </div>
       </div>
     </section>
@@ -406,6 +384,7 @@
 <!-- footer -->
     <footer>
       <div class="container-fluid">
+        <section class="servizi">
         <div class="row">
           <div class="col-lg-4">
             <img src="img/logo-mark.svg" alt="logo-mark">
@@ -477,6 +456,7 @@
           </div>
         </div>
       </div>
+      </section>
     </footer>
 
 
