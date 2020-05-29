@@ -17,13 +17,8 @@ i{
 /* regole debug */
 [class*="col-"] {
   height: 100%;
-  /* background-color: pink; */
-  /* border: 1px solid blue */
 }
 
-/* .row{
-  height: 100px
-} */
 
 /* regole sezione fixed menu */
 
@@ -68,9 +63,11 @@ i{
   height: auto;
 }
 
+
+
 /* sezione jumbotron */
 .jumbotron{
-  background-color: #0069ff;
+  background-color: #0b0b88;
   margin: 0 auto;
   background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
   background-size: cover;
@@ -243,6 +240,29 @@ i{
   padding-bottom: 2%;
 }
 
+table{
+  width: 75%;
+  margin-bottom: 3%
+}
+
+table a{
+  margin-left: 35%;
+  color: hsl(170, 100%, 35%);
+  font-weight: bold;
+}
+
+.tabella1{
+  margin-left: 12%
+}
+
+
+tr:not(:last-child){
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  line-height: 2;
+  border-width: thin;
+}
+
 .codice{
   border-bottom: 1px solid white;
   weight: 80%
@@ -268,5 +288,95 @@ i{
 /* footer */
 
 .servizi{
-  background-color: hsl(221, 93%, 16%)
+  background-color: hsl(221, 93%, 16%);
+  padding: 2% 6%;
+}
+
+.icone-social i{
+  color: lightgrey;
+  margin-right: 2%;
+  font-size: 20px
+}
+
+#mark{
+  margin-bottom: 2%
+}
+
+.copyright{
+  color: lightgrey;
+  font-size: 1.3rem;
+}
+
+.made-ny{
+  color: grey;
+  font-size: 1.3rem;
+  margin-bottom: 3%;
+}
+
+.servizi h6{
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.servizi li{
+  list-style-type: none;
+}
+
+.servizi a{
+    color: lightgrey;
+}
+
+
+/* regole responsiveness */
+
+
+/* schermo xs */
+@media screen and (min-width: 767px) {
+  .deploy{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 7% 0;
+  }
+
+  .jumbotron h1{
+    line-height: 40px;
+    padding-top: 11%;
+  }
+
+
+  table{
+    width: 75%;
+    margin-bottom: 3%
+  }
+
+  table a{
+    margin-left: 0;
+    color: hsl(170, 100%, 35%);
+    font-weight: bold;
+  }
+
+  .tabella1{
+    margin-left: none
+  }
+
+}
+
+/* schermo sm */
+@media screen and (max-width: 768px) {
+  .deploy{
+    background-color: white;
+    text-align: center;
+    margin-top: 20%;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding: 7% 0;
+  }
+
+  .jumbotron h1, .jumbotron p{
+    line-height: 30px;
+    padding-top: 11%
+  }
 }
